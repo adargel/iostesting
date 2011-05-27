@@ -15,9 +15,7 @@
 		42DB8237139050480077E21D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB820313904F730077E21D /* UIKit.framework */; };
 		42DB8238139050480077E21D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB820113904F400077E21D /* Foundation.framework */; };
 		42DB823A139050480077E21D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB8239139050480077E21D /* CoreGraphics.framework */; };
-		42DB8253139050C20077E21D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42DB824E139050C20077E21D /* InfoPlist.strings */; };
 		42DB8254139050C20077E21D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB8250139050C20077E21D /* main.m */; };
-		42DB8255139050C20077E21D /* Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42DB8251139050C20077E21D /* Tests-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -248,8 +246,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DB8253139050C20077E21D /* InfoPlist.strings in Resources */,
-				42DB8255139050C20077E21D /* Tests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,8 +367,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/Resources/$(TARGET_NAME)-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Resources/$(TARGET_NAME)-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -385,8 +381,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/Resources/$(TARGET_NAME)-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Resources/$(TARGET_NAME)-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
