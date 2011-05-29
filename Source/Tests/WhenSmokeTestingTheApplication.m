@@ -18,6 +18,7 @@
 {
     assertThat(nil, is(equalTo(nil)));
 }
+
 -(void)testItRunsTheSmokeTestThatFails
 {
     assertThat(nil, isNot(equalTo(nil)));
