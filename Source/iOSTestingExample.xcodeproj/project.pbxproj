@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42C2FC911392FDC800D4A517 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2FC901392FDC800D4A517 /* OCHamcrestIOS.framework */; };
+		42C2FC951392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C2FC941392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m */; };
+		42C2FC971392FFAE00D4A517 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2FC961392FFAE00D4A517 /* GHUnitIOS.framework */; };
+		42C2FC991393006B00D4A517 /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C2FC981393006B00D4A517 /* GHUnitIOSTestMain.m */; };
 		42DB81FF13904F260077E21D /* iOSTestingExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB81F913904E230077E21D /* iOSTestingExampleAppDelegate.m */; };
 		42DB820013904F260077E21D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB81FA13904E230077E21D /* main.m */; };
 		42DB820513904F900077E21D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB820113904F400077E21D /* Foundation.framework */; };
@@ -15,10 +19,13 @@
 		42DB8237139050480077E21D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB820313904F730077E21D /* UIKit.framework */; };
 		42DB8238139050480077E21D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB820113904F400077E21D /* Foundation.framework */; };
 		42DB823A139050480077E21D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB8239139050480077E21D /* CoreGraphics.framework */; };
-		42DB8254139050C20077E21D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB8250139050C20077E21D /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42C2FC901392FDC800D4A517 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		42C2FC941392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhenSmokeTestingTheApplication.m; sourceTree = "<group>"; };
+		42C2FC961392FFAE00D4A517 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		42C2FC981393006B00D4A517 /* GHUnitIOSTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUnitIOSTestMain.m; sourceTree = "<group>"; };
 		42DB81BE13904BB90077E21D /* iOSTestingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTestingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DB81F213904E230077E21D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42DB81F413904E230077E21D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
@@ -32,7 +39,6 @@
 		42DB8235139050480077E21D /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DB8239139050480077E21D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		42DB824F139050C20077E21D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		42DB8250139050C20077E21D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42DB8251139050C20077E21D /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		42DB8252139050C20077E21D /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +60,8 @@
 				42DB8237139050480077E21D /* UIKit.framework in Frameworks */,
 				42DB8238139050480077E21D /* Foundation.framework in Frameworks */,
 				42DB823A139050480077E21D /* CoreGraphics.framework in Frameworks */,
+				42C2FC911392FDC800D4A517 /* OCHamcrestIOS.framework in Frameworks */,
+				42C2FC971392FFAE00D4A517 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +145,8 @@
 		42DB81FC13904E230077E21D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42C2FC961392FFAE00D4A517 /* GHUnitIOS.framework */,
+				42C2FC901392FDC800D4A517 /* OCHamcrestIOS.framework */,
 				42DB820113904F400077E21D /* Foundation.framework */,
 				42DB820313904F730077E21D /* UIKit.framework */,
 				42DB8239139050480077E21D /* CoreGraphics.framework */,
@@ -155,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				42DB824D139050C20077E21D /* Resources */,
+				42C2FC941392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -162,8 +173,8 @@
 		42DB824D139050C20077E21D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				42C2FC981393006B00D4A517 /* GHUnitIOSTestMain.m */,
 				42DB824E139050C20077E21D /* InfoPlist.strings */,
-				42DB8250139050C20077E21D /* main.m */,
 				42DB8251139050C20077E21D /* Tests-Info.plist */,
 				42DB8252139050C20077E21D /* Tests-Prefix.pch */,
 			);
@@ -265,7 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DB8254139050C20077E21D /* main.m in Sources */,
+				42C2FC951392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m in Sources */,
+				42C2FC991393006B00D4A517 /* GHUnitIOSTestMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,10 +377,19 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Resources/$(TARGET_NAME)-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Resources/$(TARGET_NAME)-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -380,9 +401,18 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Resources/$(TARGET_NAME)-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Resources/$(TARGET_NAME)-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -417,6 +447,7 @@
 				42DB824C139050480077E21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

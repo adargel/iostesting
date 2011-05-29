@@ -9,6 +9,9 @@
 #endif
 
 #ifdef __OBJC__
+    #define HC_SHORTHAND
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <GHUnitIOS/GHUnit.h>
+    #import <OCHamcrestIOS/OCHamcrestIOS.h>
 #endif
