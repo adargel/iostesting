@@ -279,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "chmod u+x $PROJECT_DIR/Tests/Resources/RunTests.sh\n$PROJECT_DIR/Tests/Resources/RunTests.sh";
+			shellScript = "chmod u+x $PROJECT_DIR/Tests/Resources/RunTests.sh\nGHUNIT_CLI=1 $PROJECT_DIR/Tests/Resources/RunTests.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
