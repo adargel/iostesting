@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42C0C9791393077D007DF53F /* RunTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 42C0C9781393077D007DF53F /* RunTests.sh */; };
 		42C2FC911392FDC800D4A517 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2FC901392FDC800D4A517 /* OCHamcrestIOS.framework */; };
 		42C2FC951392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C2FC941392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m */; };
 		42C2FC971392FFAE00D4A517 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2FC961392FFAE00D4A517 /* GHUnitIOS.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42C0C9781393077D007DF53F /* RunTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = "<group>"; };
 		42C2FC901392FDC800D4A517 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		42C2FC941392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhenSmokeTestingTheApplication.m; sourceTree = "<group>"; };
 		42C2FC961392FFAE00D4A517 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				42DB824E139050C20077E21D /* InfoPlist.strings */,
 				42DB8251139050C20077E21D /* Tests-Info.plist */,
 				42DB8252139050C20077E21D /* Tests-Prefix.pch */,
+				42C0C9781393077D007DF53F /* RunTests.sh */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				42DB8231139050480077E21D /* Sources */,
 				42DB8232139050480077E21D /* Frameworks */,
 				42DB8233139050480077E21D /* Resources */,
+				42C0C97B1393079E007DF53F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DB820713904FD30077E21D /* MainWindow.xib in Resources */,
+				42C0C9791393077D007DF53F /* RunTests.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42C0C97B1393079E007DF53F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "chmod u+x $PROJECT_DIR/Tests/Resources/RunTests.sh\n$PROJECT_DIR/Tests/Resources/RunTests.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42DB81BA13904BB90077E21D /* Sources */ = {
