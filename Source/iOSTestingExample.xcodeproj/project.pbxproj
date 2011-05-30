@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42C0C9791393077D007DF53F /* RunTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 42C0C9781393077D007DF53F /* RunTests.sh */; };
 		42C2FC911392FDC800D4A517 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2FC901392FDC800D4A517 /* OCHamcrestIOS.framework */; };
 		42C2FC951392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C2FC941392FF0E00D4A517 /* WhenSmokeTestingTheApplication.m */; };
 		42C2FC971392FFAE00D4A517 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2FC961392FFAE00D4A517 /* GHUnitIOS.framework */; };
@@ -254,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DB820713904FD30077E21D /* MainWindow.xib in Resources */,
-				42C0C9791393077D007DF53F /* RunTests.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "chmod u+x $PROJECT_DIR/Tests/Resources/RunTests.sh\n$PROJECT_DIR/Tests/Resources/RunTests.sh";
+			shellScript = $PROJECT_DIR/Tests/Resources/RunTests.sh;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -373,7 +371,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Application/Resources/$(TARGET_NAME)-Prefix.pch";
 				INFOPLIST_FILE = "Application/Resources/$(TARGET_NAME)-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -386,7 +386,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Application/Resources/$(TARGET_NAME)-Prefix.pch";
 				INFOPLIST_FILE = "Application/Resources/$(TARGET_NAME)-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,12 +408,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Resources/$(TARGET_NAME)-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Resources/$(TARGET_NAME)-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -429,12 +434,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Resources/$(TARGET_NAME)-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Resources/$(TARGET_NAME)-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
